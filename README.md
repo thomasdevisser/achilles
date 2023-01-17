@@ -32,6 +32,12 @@ When you edit Global Styles the changes are saved to a custom post with post typ
 
 Custom templates are not automatically given a name by WordPress. Because the others are, you need to add the custom templates and template parts to your theme.json (use the theme.json in this theme as a reference).
 
+### Block Patterns
+
+You can create these using PHP, but the recommended way is using the /patterns folder. These are just a pattern of blocks, and won't update like templates do if you change them later on.
+
+Because patterns are registered on the init action hook, they cannot rely on any data or conditionals that are set or generated after that point in the WordPress load process.
+
 ## Some references I have to read later
 
 - https://css-tricks.com/fluid-typography-wordpress-block-theme
