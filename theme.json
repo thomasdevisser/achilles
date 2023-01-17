@@ -46,14 +46,32 @@
       "fluid": false,
       "fontFamilies": [
         {
-          "fontFamily": "Arial",
-          "name": "Arial",
-          "slug": "arial"
-        },
-        {
-          "fontFamily": "Helvetica",
-          "name": "Helvetica",
-          "slug": "helvetica"
+          "name": "Ubuntu",
+          "slug": "ubuntu",
+          "fontFamily": "Ubuntu, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Ubuntu",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [ "file:./assets/fonts/ubuntu-regular.woff2"]
+            },
+            {
+              "fontFamily": "Ubuntu",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [ "file:./assets/fonts/ubuntu-500.woff2"]
+            },
+            {
+              "fontFamily": "Ubuntu",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [ "file:./assets/fonts/ubuntu-700.woff2"]
+            }
+          ] 
         }
       ],
       "fontSizes": [
@@ -76,12 +94,20 @@
     }
   },
   "styles": {
+    "blocks": {
+			"core/heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--ubuntu)",
+					"textTransform": "uppercase"
+				}
+			}
+		},
     "color": {
       "background": "var(--wp--preset--color--base)",
       "text": "var(--wp--preset--color--contrast)"
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--helvetica)"
+      "fontFamily": "var(--wp--preset--font-family--ubuntu)"
     },
     "elements": {
       "button": {
