@@ -24,6 +24,10 @@ The most important blocks for building layouts are the core blocks Group, Row an
 
 When you edit Global Styles the changes are saved to a custom post with post type wp_global_styles. This will save a JSON object with all updated values. If you change something in theme.json, but there's also a changed value in Global Styles, that will be used. You can reset your Global Styles from the menu in the Site Editor.
 
+### Custom Template Names
+
+Custom templates are not automatically given a name by WordPress. Because the others are, you need to add the custom templates and template parts to your theme.json (use the theme.json in this theme as a reference).
+
 ## Some references I have to read later
 
 - https://css-tricks.com/fluid-typography-wordpress-block-theme

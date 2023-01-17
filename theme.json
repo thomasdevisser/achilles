@@ -120,5 +120,26 @@
         }
       }
     }
-  }
+  },
+  "customTemplates": [
+    {
+      "name": "landing-page",
+      "postTypes": [
+        "page"
+      ],
+      "title": "Landing Page"
+    }
+  ],
+  "templateParts": [
+    {
+      "name": "simple-footer",
+      "title": "Simple Footer",
+      "area": "footer"
+    },
+    {
+      "name": "complex-footer",
+      "title": "Complex Footer",
+      "area": "footer"
+    }
+  ]
 }
