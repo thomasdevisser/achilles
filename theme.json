@@ -142,7 +142,7 @@
       "heading": {
         "typography": {
           "letterSpacing": "-0.02rem",
-          "fontWeight": "300"
+          "fontWeight": "700"
         }
       }
     }
@@ -166,6 +166,11 @@
       "name": "complex-footer",
       "title": "Complex Footer",
       "area": "footer"
+    },
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
     }
   ]
 }
