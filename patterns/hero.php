@@ -7,14 +7,10 @@
  * Keywords: banner, hero, header
  */
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/crete.jpg' ) ); ?>","dimRatio":50,"overlayColor":"white","align":"full"} -->
-<div class="wp-block-cover">
-  <span
-    aria-hidden="true"
-    class="wp-block-cover__background has-black-background-color has-background-dim"
-  ></span>
-  <img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/crete.jpg' ) ); ?>" data-object-fit="cover"/>
-  <div class="wp-block-cover__inner-container">
+<!-- wp:group {"templateLock":"contentOnly","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+  <!-- wp:cover {"dimRatio":50,"overlayColor":"white","isDark":false,"align":"full"} -->
+  <div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim"></span><div class="wp-block-cover__inner-container">
     <!-- wp:group {"layout":{"type":"constrained"}} -->
     <div class="wp-block-group">
       <!-- wp:heading {"textAlign":"center"} -->
@@ -30,18 +26,12 @@
     <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
     <div class="wp-block-buttons">
       <!-- wp:button -->
-      <div class="wp-block-button">
-        <a class="wp-block-button__link wp-element-button">Join</a>
-      </div>
+      <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Join</a></div>
       <!-- /wp:button -->
 
       <!-- wp:button -->
-      <div class="wp-block-button">
-        <a class="wp-block-button__link wp-element-button">I'm a titan</a>
-      </div>
-      <!-- /wp:button -->
-    </div>
-    <!-- /wp:buttons -->
-  </div>
-</div>
-<!-- /wp:cover -->
+      <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">I'm a titan</a></div>
+      <!-- /wp:button --></div>
+    <!-- /wp:buttons --></div></div>
+  <!-- /wp:cover --></div>
+<!-- /wp:group -->

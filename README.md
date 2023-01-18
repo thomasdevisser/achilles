@@ -38,6 +38,10 @@ You can create these using PHP, but the recommended way is using the /patterns f
 
 Because patterns are registered on the init action hook, they cannot rely on any data or conditionals that are set or generated after that point in the WordPress load process.
 
+### Internationalization
+
+The only templates that support PHP and thus dynamic content like internationalized strings, are block patterns. You can register block patterns without a category so they don't show up in the backend, and then use those patterns in templates or template parts.
+
 ## Some references I have to read later
 
 - https://css-tricks.com/fluid-typography-wordpress-block-theme
